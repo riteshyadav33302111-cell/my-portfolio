@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ritesh Yadav — CSE @ NIT Patna</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="port.css">
+</head>
+<body>
+
+<!-- CANVAS BACKGROUND -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
+  <a href="#hero" onclick="closeMobileMenu()">Home</a>
+  <a href="#about" onclick="closeMobileMenu()">About</a>
+  <a href="#skills" onclick="closeMobileMenu()">Skills</a>
+  <a href="#projects" onclick="closeMobileMenu()">Projects</a>
+  <a href="#achievements" onclick="closeMobileMenu()">Achievements</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+ 
+    <a href="#hero" class="nav-logo">RY<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+     <button id="theme-toggle" class="theme-toggle">🌙</button>
+    <div class="hamburger" onclick="openMobileMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <!-- Left Content -->
+      <div class="hero-content">
+        <div class="hero-badge reveal">
+          <span class="dot"></span>
+          Available for opportunities
+        </div>
+
+        <h1 class="hero-name reveal">
+          Ritesh<br>
+          <span class="gradient-text">Yadav</span>
+        </h1>
+
+        <p class="hero-tagline reveal">
+          Aspiring Software Developer · CSE @ NIT Patna
+        </p>
+
+        <div class="typed-wrapper reveal">
+          &rsaquo; <span id="typed-text"></span>
+        </div>
+
+        <p class="hero-desc reveal">
+          A passionate Computer Science student at NIT Patna, building real-world projects,
+          exploring web development, and constantly levelling up through hackathons and
+          hands-on learning. Turning curiosity into code — one project at a time.
+        </p>
+
+       <div class="btn-group reveal">
+  <a href="resume.pdf" download class="btn btn-primary">
+    <span>Download Resume</span>
+    <span>⬇</span>
+  </a>
+
+  <a href="#projects" class="btn btn-ghost">
+    <span>View Projects</span>
+    <span>→</span>
+  </a>
+
+  <a href="#contact" class="btn btn-ghost">
+    <span>Contact Me</span>
+  </a>
+</div>
+      </div>
+
+      <!-- Right Card -->
+      <div class="hero-visual reveal-right">
+        <div class="hero-card">
+          <div class="hero-avatar">RY</div>
+          <h3>Ritesh Yadav</h3>
+          <p>2nd Semester Undergrad · CSE</p>
+
+          <div class="stat-row">
+            <div class="stat-box">
+              <span class="num">4+</span>
+              <span class="label">Projects</span>
+            </div>
+            <div class="stat-box">
+              <span class="num">4+</span>
+              <span class="label">Languages</span>
+            </div>
+            <div class="stat-box">
+              <span class="num">∞</span>
+              <span class="label">Learning</span>
+            </div>
+            <div class="stat-box">
+              <span class="num">NIT</span>
+              <span class="label">Patna</span>
+            </div>
+          </div>
+
+          <div class="tech-stack">
+            <span class="tech-pill">C / C++</span>
+            <span class="tech-pill">Python</span>
+            <span class="tech-pill">JavaScript</span>
+            <span class="tech-pill">HTML/CSS</span>
+            <span class="tech-pill">DSA</span>
+            <span class="tech-pill">APIs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-mouse">
+      <div class="scroll-wheel"></div>
+    </div>
+    Scroll
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text">
+        <span class="section-label reveal">About Me</span>
+        <h2 class="section-title reveal" style="margin-bottom:28px;">Turning ideas into<br><span class="gradient-text">real products</span></h2>
+
+        <p class="reveal">
+          I'm Ritesh Yadav — a Computer Science undergrad at <strong>NIT Patna</strong> with a hunger
+          for building things that actually work. I love the intersection of elegant design and
+          efficient code.
+        </p>
+        <p class="reveal">
+          Whether it's cloning a frontend interface, wiring up APIs, or grinding through data
+          structures, I approach every challenge as a growth opportunity. Hackathons fuel my
+          competitive spirit and workshops keep me ahead of the curve.
+        </p>
+
+        <div class="highlight-line reveal">
+          <span class="highlight-icon">🎯</span>
+          <p>Focused on mastering full-stack web development and cracking DSA to land top-tier software roles.</p>
+        </div>
+        <div class="highlight-line reveal">
+          <span class="highlight-icon">⚡</span>
+          <p>Fast learner — I go from zero to deployment by diving deep, breaking things, and building again.</p>
+        </div>
+        <div class="highlight-line reveal">
+          <span class="highlight-icon">🤝</span>
+          <p>Hackathon participant who thrives under pressure and loves collaborative problem-solving.</p>
+        </div>
+      </div>
+
+      <div class="about-visual reveal-right">
+        <div class="glassy-box">
+          <div class="nit-badge">
+            <div class="nit-logo">NIT</div>
+            <div class="nit-info">
+              <h4>NIT Patna</h4>
+              <p>National Institute of Technology<br>B.Tech CSE · 2nd Semester</p>
+            </div>
+          </div>
+
+          <p style="font-size:0.78rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.12em;font-weight:600;margin-bottom:12px;">Interests & Focus Areas</p>
+
+          <div class="interest-grid">
+            <div class="interest-item">
+              <span class="interest-emoji">🌐</span>
+              <span>Web Dev</span>
+            </div>
+            <div class="interest-item">
+              <span class="interest-emoji">🧠</span>
+              <span>Problem Solving</span>
+            </div>
+            <div class="interest-item">
+              <span class="interest-emoji">🔌</span>
+              <span>APIs & Backend</span>
+            </div>
+            <div class="interest-item">
+              <span class="interest-emoji">🏆</span>
+              <span>Hackathons</span>
+            </div>
+            <div class="interest-item">
+              <span class="interest-emoji">📊</span>
+              <span>DSA</span>
+            </div>
+            <div class="interest-item">
+              <span class="interest-emoji">🚀</span>
+              <span>Open Source</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS
+     ============================================================ -->
+<section id="skills">
+  <div class="container">
+    <span class="section-label reveal">Technical Skills</span>
+    <h2 class="section-title reveal">My <span class="gradient-text">Toolkit</span></h2>
+
+    <div class="skills-grid">
+      <div class="skill-category reveal">
+        <div class="cat-icon">💻</div>
+        <div class="cat-title">Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="cat-icon">🌐</div>
+        <div class="cat-title">Web Technologies</div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">REST APIs</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="cat-icon">🧩</div>
+        <div class="cat-title">Concepts</div>
+        <div class="skill-tags">
+          <span class="skill-tag">DSA Basics</span>
+          <span class="skill-tag">OOP</span>
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">Git / GitHub</span>
+        </div>
+      </div>
+      <div class="skill-category reveal">
+        <div class="cat-icon">🛠️</div>
+        <div class="cat-title">Tools & Platforms</div>
+        <div class="skill-tags">
+          <span class="skill-tag">VS Code</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Browser DevTools</span>
+          <span class="skill-tag">Postman</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proficiency Bars -->
+    <div class="skill-bars">
+      <div class="skill-bar-item reveal">
+        <div class="bar-header">
+          <span class="bar-name">HTML / CSS</span>
+          <span class="bar-pct">82%</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" data-width="82"></div></div>
+      </div>
+      <div class="skill-bar-item reveal">
+        <div class="bar-header">
+          <span class="bar-name">JavaScript</span>
+          <span class="bar-pct">72%</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" data-width="72"></div></div>
+      </div>
+      <div class="skill-bar-item reveal">
+        <div class="bar-header">
+          <span class="bar-name">C / C++</span>
+          <span class="bar-pct">78%</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" data-width="78"></div></div>
+      </div>
+      <div class="skill-bar-item reveal">
+        <div class="bar-header">
+          <span class="bar-name">Python</span>
+          <span class="bar-pct">65%</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" data-width="65"></div></div>
+      </div>
+      <div class="skill-bar-item reveal">
+        <div class="bar-header">
+          <span class="bar-name">Problem Solving / DSA</span>
+          <span class="bar-pct">60%</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" data-width="60"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PROJECTS
+     ============================================================ -->
+<section id="projects">
+  <div class="container">
+    <span class="section-label reveal">Featured Work</span>
+    <h2 class="section-title reveal">Projects I've <span class="gradient-text">Built</span></h2>
+
+    <div class="projects-grid">
+
+      <!-- Netflix Clone -->
+      <div class="project-card reveal">
+        <div class="project-banner banner-netflix">🎬</div>
+        <div class="project-body">
+          <div class="project-title">Netflix Clone</div>
+          <div class="project-desc">
+            A pixel-perfect frontend clone of Netflix's landing page — complete with hero section, content carousels, and a fully responsive layout that mirrors the real streaming giant's UI.
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS3</span>
+            <span class="tech-badge">Responsive</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/riteshyadav33302111-cell/" target="_blank" class="project-btn pb-github">
+              ⬡ GitHub
+            </a>
+            <a href="https://github.com/riteshyadav33302111-cell/" class="project-btn pb-live">↗ Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weather App -->
+      <div class="project-card reveal">
+        <div class="project-banner banner-weather">🌦️</div>
+        <div class="project-body">
+          <div class="project-title">Weather App</div>
+          <div class="project-desc">
+            A dynamic weather application that fetches real-time meteorological data via a public API. Search any city worldwide and get live temperature, humidity, and sky conditions.
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">REST API</span>
+            <span class="tech-badge">HTML/CSS</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/riteshyadav33302111-cell/" target="_blank" class="project-btn pb-github">
+              ⬡ GitHub
+            </a>
+            <a href="https://github.com/riteshyadav33302111-cell/" class="project-btn pb-live">↗ Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Calculator -->
+      <div class="project-card reveal">
+        <div class="project-banner banner-calc">🔢</div>
+        <div class="project-body">
+          <div class="project-title">Calculator</div>
+          <div class="project-desc">
+            A fully functional scientific-style calculator built with vanilla JavaScript. Supports arithmetic operations, keyboard input, and history tracking with a clean glassmorphism UI.
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">HTML5</span>
+            <span class="tech-badge">CSS Grid</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/riteshyadav33302111-cell/" target="_blank" class="project-btn pb-github">
+              ⬡ GitHub
+            </a>
+            <a href="https://github.com/riteshyadav33302111-cell/" class="project-btn pb-live">↗ Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mini Games -->
+      <div class="project-card reveal">
+        <div class="project-banner banner-games">🎮</div>
+        <div class="project-body">
+          <div class="project-title">Mini Games Collection</div>
+          <div class="project-desc">
+            A collection of browser-based mini games including Tic-Tac-Toe, Snake, and a memory card flip game. Built with pure JavaScript — no frameworks, just logic and creativity.
+          </div>
+          <div class="project-tech">
+            <span class="tech-badge">JavaScript</span>
+            <span class="tech-badge">Game Logic</span>
+            <span class="tech-badge">HTML Canvas</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/riteshyadav33302111-cell/" target="_blank" class="project-btn pb-github">
+              ⬡ GitHub
+            </a>
+            <a href="https://github.com/riteshyadav33302111-cell/" class="project-btn pb-live">↗ Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ACHIEVEMENTS
+     ============================================================ -->
+<section id="achievements">
+  <div class="container">
+    <span class="section-label reveal">Journey</span>
+    <h2 class="section-title reveal">Achievements &amp; <span class="gradient-text">Experience</span></h2>
+
+    <div class="achievements-grid">
+      <div class="ach-card reveal">
+        <div class="ach-icon-wrap">🏆</div>
+        <h3>Hackathon Participant</h3>
+        <p>Competed in multiple hackathons, building and shipping projects under tight deadlines while collaborating with cross-functional teams.</p>
+      </div>
+      <div class="ach-card reveal">
+        <div class="ach-icon-wrap">🎓</div>
+        <h3>NIT Patna Scholar</h3>
+        <p>Secured admission to one of India's prestigious National Institutes of Technology — competing among thousands of JEE aspirants.</p>
+      </div>
+      <div class="ach-card reveal">
+        <div class="ach-icon-wrap">🛠️</div>
+        <h3>Workshop Attendee</h3>
+        <p>Participated in technical workshops covering web development, programming fundamentals, and emerging technologies in the CS domain.</p>
+      </div>
+      <div class="ach-card reveal">
+        <div class="ach-icon-wrap">⚡</div>
+        <h3>Fast Self-Learner</h3>
+        <p>Built multiple real-world projects independently — from concept to deployment — leveraging online resources and documentation.</p>
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="timeline" style="margin-top:60px;max-width:540px;">
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2024</div>
+        <h4>Joined NIT Patna — CSE</h4>
+        <p>Began the B.Tech journey in Computer Science & Engineering at one of India's premier NITs.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2024</div>
+        <h4>First Projects Built</h4>
+        <p>Shipped Netflix Clone, Weather App, and Calculator — gaining hands-on web development experience.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">2025</div>
+        <h4>Hackathon Participation</h4>
+        <p>Competed in multiple hackathons including AI WebForge, honing rapid prototyping and problem-solving skills.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-date">Now</div>
+        <h4>Growing & Building</h4>
+        <p>Exploring DSA, deepening JS knowledge, and expanding the project portfolio for internship readiness.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-wrapper">
+      <span class="section-label reveal" style="margin:0 auto 16px;display:flex;justify-content:center;">Get In Touch</span>
+      <h2 class="reveal">Let's <span class="gradient-text">Connect</span></h2>
+      <p class="sub reveal">
+        Open to internships, collaborations, hackathon teams, and exciting opportunities.<br>
+        Don't hesitate to reach out — I respond fast. ⚡
+      </p>
+
+      <div class="contact-cards reveal">
+        <a href="mailto:riteshyadav33302111@gmail.com" class="contact-card">
+          <span class="contact-icon">📧</span>
+          <span class="contact-label">Email</span>
+          <span class="contact-value">riteshyadav33302111@gmail.com</span>
+        </a>
+        <a href="https://github.com/riteshyadav33302111-cell/" target="_blank" class="contact-card">
+          <span class="contact-icon">⬡</span>
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">riteshyadav33302111-cell</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ritesh-yadav-6575573a9/" target="_blank" class="contact-card">
+          <span class="contact-icon">💼</span>
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Ritesh Yadav</span>
+        </a>
+      </div>
+
+      <a href="mailto:riteshyadav33302111@gmail.com" class="email-cta reveal">
+        <span>📬</span> Send me an Email
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-name">Ritesh Yadav</div>
+    <p>CSE Undergrad · NIT Patna · Building the future, one commit at a time.</p>
+    <p>Built with ❤️ during <strong>AI WebForge Hackathon</strong></p>
+    <div class="ai-note">✦ <p>Designed & Developed by Ritesh Yadav</p></div>
+  </div>
+</footer>
+
+
+ <script src="port.js"></script>
+
+</body>
+</html>
